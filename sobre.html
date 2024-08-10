@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/barata3 - Copia.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="img/barata3 - Copia.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <script src="js/fontawesome.js"></script>
+   
+    <link rel="stylesheet" href="css/styless.css" />
+    <title>Sobre Nós</title>
+  </head>
+  <body>
+    <script>
+      const toggle = () => {
+        document.getElementById("nav").classList.toggle("navactive");
+      };
+      function setTopo(){
+        $(window).scrollTop(0);
+    }
+    $(window).bind('scroll', setTopo);
+    </script>
+    <header>
+      <div class="brand">
+        <a href="inicio.html"><img src="img/barata3.jpeg" alt="Logo da Dedetizadora" id="logo"></a>
+        <h1>Dedetizadora</h1>
+      </div>
+      <span class="fas fa-bars" id="menuIcon" onclick="toggle()"></span>
+      <div class="navbar" id="nav">
+        <ul>
+          <li>
+            <span class="fas fa-home" id="headIcon"></span>
+         
+            <a href="inicio.html"> Inicio </a>
+          </li>
+          <li>
+            <span class="fa-solid fa-address-card" id="headIcon"></span>
+            <a href="sobre.html"> Sobre </a>
+          </li>
+          <li>
+            <span class="fa-solid fa-spray-can" id="headIcon"></span>
+            <a href="serviços.html"> Serviços </a>
+          </li>
+          <li>
+            <span class="fa-solid fa-money-check-dollar" id="headIcon"></span>
+            <a href="Orçamento.php"> Orçamento </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+        <br>
+        <h1>SOBRE NÓS</h1>
+
+        <div class="container">
+          <p class="text-info">Detetizadora Sai Pragas é uma empresa de controle de pragas com atuação estadual. Nosso compromisso é oferecer soluções eficazes com o máximo de segurança para a saúde das pessoas e para o meio ambiente.</p>
+          <p class="text-info">Somos certificados em nosso sistema de gestão da qualidade, conforme a norma NBR ISO 9001:2015, garantindo a excelência em nossos serviços de controle de pragas. Contamos com o maior e mais qualificado corpo técnico do mercado, proporcionando soluções inovadoras. Pensamos globalmente e agimos de forma localizada, com rapidez e qualidade.</p>
+        </div>
+        
+        <br>
+        
+        <div class="painel-container">
+          <div class="painel">
+            <br>
+            <p>MISSÃO</p>
+            <p>Prestar serviços na área de controle de pragas em nível nacional, de forma ética, respeitar o meio ambiente, investir no desenvolvimento de pessoas e garantir a satisfação de clientes, colaboradores e sócios.</p>
+            <br>
+            <p>VISÃO</p>
+            <p>Expandir a Detetizadora Sai Pragas, ser referência de qualidade na área de controle de pragas e reconhecida como uma das melhores alternativas para clientes, colaboradores e investidores.</p>
+          </div>
+        
+          <div class="painel-pequeno">
+            <p>VALORES</p>
+            <br>
+            <ul>
+              <li>Aprendizagem proativa</li>
+              <li>Relações baseadas em ética e honestidade</li>
+              <li>Transparência e objetividade</li>
+              <li>Responsabilidade e competência</li>
+              <li>Liderança em inovação e qualidade</li>
+              <li>Empreendedorismo com eficiência</li>
+              <li>Respeito ao próximo e ao meio ambiente</li>
+            </ul>
+          </div>
+        </div>
+        
+        </body>
+        </html>

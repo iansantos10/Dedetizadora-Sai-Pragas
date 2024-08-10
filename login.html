@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/barata3 - Copia.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/barata3 - Copia.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <script src="js/fontawesome.js"></script>
+    <script src="js/slide.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" href="css/money.css" />
+    <title>Login</title>
+    <style>
+        body{    
+        background: url(img/detetização.jpg);
+        background-position: 50% 20%; 
+ background-repeat: no-repeat; 
+ background-size: cover; 
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        const toggle = () => {
+            document.getElementById("nav").classList.toggle("navactive");
+        };
+        function setTopo(){
+            $(window).scrollTop(0);
+        }
+        $(window).bind('scroll', setTopo);
+    </script>
+    <header>
+        <div class="brand">
+            <img src="img/barata3.jpeg" alt="Logo da Dedetizadora" id="logo">
+            <h1>Dedetizadora</h1>
+        </div>
+        <span class="fas fa-bars" id="menuIcon" onclick="toggle()"></span>
+        <div class="navbar" id="nav">
+           
+            <ul>
+                <li>
+                    <span class="fas fa-home" id="headIcon"></span>
+                    <a href="inicio.html"> Inicio </a>
+                </li>
+                <li>
+                    <span class="fa-solid fa-address-card" id="headIcon"></span>
+                    <a href="sobre.html"> Sobre </a>
+                </li>
+                <li>
+                    <span class="fa-solid fa-spray-can" id="headIcon"></span>
+                    <a href="serviços.html"> Serviços </a>
+                </li>
+                <li>
+                    <span class="fa-solid fa-money-check-dollar" id="headIcon"></span>
+                    <a href="Orçamento.html"> Orçamento </a>
+                </li>
+                <li>
+                    <span class="fas fa-sign-out" id="headIcon"></span>
+                    <a href="login.html"> Login </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <form action="">
+                <h2>Entrar</h2>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for=""> Nome de Usuário</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label for="">Senha</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox"> Me lembre</label>
+                </div>
+                <button type="submit">Entrar</button>
+                <div class="signUp-link">
+                    <p>Ainda não possui cadastro? <a href="#" class="signUpBtn-link">Registra-se</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h2>Registra-se</h2>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for="">Nome de Usuário</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label for="">Senha</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox"> Eu aceito os termos e condiçoes</label>
+                </div>
+                <button type="submit">Registrar</button>
+                <div class="signUp-link">
+                    <p>Já tem uma conta? <a href="inicio.html" class="signInBtn-link">Entrar</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<script>
+    const signInBtnLink = document.querySelector('.signInBtn-link');
+    const signUpBtnLink = document.querySelector('.signUpBtn-link');
+    const wrapper = document.querySelector('.wrapper');
+
+    signUpBtnLink.addEventListener('click', () => {
+        wrapper.classList.toggle('active');
+    });
+
+    signInBtnLink.addEventListener('click', () => {
+        wrapper.classList.toggle('active');
+    });
+</script>
+
+</html>
